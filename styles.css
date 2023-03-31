@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 2rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a{
+    padding: 5px 30px;
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #6c63ff;
+    transition: all .4s;
+    border-radius: 10px;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+main{
+    display: flex;
+    height:calc(100vh - 6.25rem);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img{
+    max-width: 670px;
+    height: auto;
+}
+
+.content-left{
+    width: 30%;
+}
+
+main h1 {
+    font-size: 54px;
+    color: #133b4f;
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-size: 25px;
+    color:  #FCA70C;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+main p{
+    font-size: .9rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 2rem;
+    margin: 30px 0px;
+}
+
+.cta{
+    padding: 15px 30px ;
+    background: #a7a7e1;
+    color: #fff;
+    outline:none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn{
+    padding: 10px 20px ;
+    background: #a7a7e1;
+    color: #fff;
+    outline:none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px; 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover, button:hover{
+    box-shadow: 0 0 5px #6def8f;  
+}
+
+button{
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover{
+    box-shadow: 0 0 5px #a7a7e1; 
+}
